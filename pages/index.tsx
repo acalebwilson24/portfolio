@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         <ScrollElement name='home' className='px-8 h-full min-h-[70vh] flex items-center' >
           <div className='max-w-7xl mx-auto w-full flex justify-center pb-10 flex-col h-full'>
             <p className='text-slate-300 text-xl mb-0'>My name is <span className='text-sky-300/90'>Caleb Wilson</span></p>
-            <h1 className='mb-0 text-[100px]'>I'm a Web Developer</h1>
+            <h1 className='mb-0 text-[100px]'>I&apos;m a Web Developer</h1>
             <p className='mb-16 text-4xl text-slate-300'>I build websites</p>
           </div>
         </ScrollElement>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <h2 className='text-4xl mb-4'>About</h2>
             <div className='mt-2 max-w-xl'>
               <p className='mb-4'>
-                I'm a highly motivated full-stack web developer with over a year of experience, largely self-taught and directed. I have experience building a variety of sites, from static pages for local businesses to eCommerce sites and web applications, using a range of front and back-end languages, tooling, and techniques.
+                I&apos;m a highly motivated full-stack web developer with over a year of experience, largely self-taught and directed. I have experience building a variety of sites, from static pages for local businesses to eCommerce sites and web applications, using a range of front and back-end languages, tooling, and techniques.
               </p>
               <p className='mb-4'>
                 Large project diversity has given me great experience in picking up new skills, filling in gaps in my knowledge, and adopting modern programming practices.
@@ -124,7 +124,7 @@ const ProjectCard: VFC<Project> = (props) => {
           {
             image && (
               <div className='mb-2'>
-                <Image src={image} height={300} width={500}  className='w-full rounded-md' />
+                <Image src={image} height={300} width={500}  className='w-full rounded-md' alt={title + " image"} />
               </div>
             )
           }
